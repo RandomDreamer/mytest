@@ -1,0 +1,15 @@
+# 配置自定义的c3p0数据源
+spring:
+   datasource:
+       c3p0:
+          driverClass: com.mysql.jdbc.Driver
+          jdbcUrl: jdbc:mysql://localhost:3306/springboot_db
+          user: root
+          password: 123456
+          maxPoolSize: 20
+          initialPoolSize: 10
+   jpa:
+       showSql: true
+       properties:
+          hibernate:
+             format_sql: true
